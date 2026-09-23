@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Advisory | AKR EcoTech - VVA, ESG, Sustainability & Training</title>
+  <meta name="description" content="AKR EcoTech comprehensive sustainability reporting, ESG advisory, ISO 26000/20400, GHG accounting, executive sustainability training, and ISO certification audits.">
+
+  <!-- External Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;700&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+
+  <!-- External Bootstrap 5.3 CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  
+  <!-- External Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Shared External Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top navbar-glass py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <//img 
+          src="./images/AKREcoTechLogo.jpeg" 
+          alt="AKR EcoTech Logo" 
+          width="44" 
+          height="44" 
+          class="brand-logo-img" 
+          style="width: 44px !important; height: 44px !important; max-width: 44px !important; max-height: 44px !important; object-fit: contain !important;"
+          onerror="this.onerror=null; this.src='AKREcoTechLogo.jpeg'; if(!this.src.includes('logo')) this.src='logo.jpg';"
+        >
+        <div class="d-flex flex-column lh-1">
+          <span class="fw-bold fs-4 font-display text-dark" style="letter-spacing: -0.02em;">AKR</span>
+          <span class="fw-bold text-success" style="font-size: 0.72rem; letter-spacing: 0.24em; color: var(--eco-green) !important;">ECOTECH</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-list fs-2 text-dark"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold">
+          <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="index.html#calculator">Carbon Tool</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="index.html#vva-journey">VVA Ecosystem</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="index.html#diagnostic">Audit Diagnostic</a></li>
+          <li class="nav-item"><a class="nav-link px-3 text-success fw-bold active" href="services.html">Services</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <button type="button" onclick="triggerDirectWhatsApp('Services Navbar Button')" class="btn btn-outline-success rounded-pill px-3 py-2 fw-semibold d-inline-flex align-items-center gap-2">
+            <i class="bi bi-whatsapp"></i> Quick WhatsApp
+          </button>
+          <a href="#services-inquiry" class="btn btn-eco-primary">
+            <i class="bi bi-shield-check"></i> Book Consultation
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button type="button" class="whatsapp-floating-btn" onclick="triggerDirectWhatsApp('Services Page Floating Button')" aria-label="Chat with AKR EcoTech on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+    <span>Chat with Auditor</span>
+  </button>
+
+  <header class="hero-glow-bg py-5">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <div class="badge-pill-eco mb-3">
+            <span class="pulse-dot"></span> Sustainability Reporting, Advisory & Assurance
+          </div>
+          <h1 class="display-4 fw-bold text-dark mb-3">
+            Empowering Resilient Enterprise Through <span style="color: var(--eco-green);">Science-Based Sustainability.</span>
+          </h1>
+          <p class="lead text-secondary mb-4">
+            Be it voluntary commitments, statutory environmental compliance, or international supply-chain disclosure standards—AKR EcoTech delivers the strategic rigor, technical verification, and hands-on capacity building required to meet your tactical and long-range sustainability milestones.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#core-services" class="btn btn-eco-primary py-3 px-4">
+              <i class="bi bi-grid-fill"></i> Explore Advisory Services
+            </a>
+            <a href="#training-academy" class="btn btn-eco-outline py-3 px-4">
+              <i class="bi bi-mortarboard-fill"></i> Corporate Training
+            </a>
+            <a href="#iso-certification" class="btn btn-outline-secondary rounded-pill py-3 px-4 fw-semibold">
+              <i class="bi bi-patch-check"></i> ISO Certification
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="quote-banner p-4 p-md-5 text-white shadow-lg">
+            <i class="bi bi-tree quote-leaf-decoration"></i>
+            <div class="d-flex align-items-center gap-2 text-success mb-3 fw-bold small text-uppercase tracking-wider">
+              <i class="bi bi-quote fs-3 text-success"></i> Guiding Ecological Philosophy
+            </div>
+            <p class="quote-text fs-4 mb-4 text-white">
+              “Until man duplicates a blade of grass, nature can laugh at his so-called scientific knowledge.”
+            </p>
+            <div class="d-flex align-items-center gap-3 border-top border-secondary border-opacity-50 pt-3">
+              <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                <i class="bi bi-lightbulb-fill"></i>
+              </div>
+              <div>
+                <div class="fw-bold font-display text-white">Thomas A. Edison</div>
+                <div class="small text-white-50">Inventor & Pioneer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-5 section-glow-subtle">
+    <div class="container py-lg-3">
+      <div class="glass-card p-4 p-md-5 border">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <div class="badge-pill-eco mb-2">The Big Picture Perspective</div>
+            <h2 class="display-6 fw-bold text-dark mb-3">
+              Corporate Social Responsibility & Sustainability Consulting
+            </h2>
+            <p class="text-secondary mb-3">
+              Navigating sustainability requires an acute understanding of the macro landscape: evolving global carbon benchmarks, shifting consumer sentiment, strict national regulations, cross-border carbon border adjustments (CBAM), and multi-stakeholder expectations.
+            </p>
+            <p class="text-secondary mb-0">
+              Wherever you are currently situated in your sustainability progression—from early-stage carbon footprint mapping to full-scale BRSR Core and ESG assurance—our accredited engineers guide your journey with actionable, cost-conscious roadmaps.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="hero-stat-badge h-100">
+                  <div class="fs-2 fw-bold text-success font-display mb-1">100%</div>
+                  <div class="fw-bold text-dark mb-1">Regulatory Aligned</div>
+                  <div class="small text-muted">SEBI BRSR Core, CPCB, and GHG Protocol standards.</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="hero-stat-badge h-100">
+                  <div class="fs-2 fw-bold text-success font-display mb-1">Scope 1-3</div>
+                  <div class="fw-bold text-dark mb-1">Full Value Chain</div>
+                  <div class="small text-muted">Exhaustive accounting across direct and upstream operations.</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="hero-stat-badge h-100">
+                  <div class="fs-2 fw-bold text-success font-display mb-1">ISO Ready</div>
+                  <div class="fw-bold text-dark mb-1">Audited Compliance</div>
+                  <div class="small text-muted">ISO 14064, ISO 26000, ISO 20400 & ISO 12647-2.</div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="hero-stat-badge h-100">
+                  <div class="fs-2 fw-bold text-success font-display mb-1">MSME Focused</div>
+                  <div class="fw-bold text-dark mb-1">High ROI Audits</div>
+                  <div class="small text-muted">Rapid identification of 15% - 28% thermal & electrical energy leaks.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="core-services" class="py-5">
+    <div class="container py-lg-4">
+      <div class="text-center max-w-2xl mx-auto mb-5">
+        <div class="badge-pill-eco mb-2">Our Specialized Portfolio</div>
+        <h2 class="display-5 fw-bold text-dark">Our Sustainability & Advisory Services</h2>
+        <p class="text-secondary col-lg-8 mx-auto">
+          Comprehensive, evidence-based environmental consulting designed to satisfy multinational client vendor onboarding and statutory compliance.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Climate Risk Framework -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-premium p-4 h-100 d-flex flex-column">
+            <div class="tab-icon mb-3"><i class="bi bi-shield-exclamation"></i></div>
+            <div class="text-muted small fw-bold mb-1">SERVICE 01</div>
+            <h5 class="fw-bold text-dark mb-2">Climate Risk Framework</h5>
+            <p class="small text-secondary flex-grow-1">
+              Physical and transitional climate vulnerability assessments aligned with TCFD and enterprise risk parameters to insulate assets against environmental disruptions.
+            </p>
+            <div class="pt-3 border-top mt-auto">
+              <span class="badge bg-success-subtle text-success small fw-semibold">TCFD & Scenario Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Carbon Audit (GHG Accounting) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-premium p-4 h-100 d-flex flex-column">
+            <div class="tab-icon mb-3"><i class="bi bi-cloud-fog2"></i></div>
+            <div class="text-muted small fw-bold mb-1">SERVICE 02</div>
+            <h5 class="fw-bold text-dark mb-2">Carbon Audit (GHG Accounting)</h5>
+            <p class="small text-secondary flex-grow-1">
+              Rigorous quantification across Scope 1 (direct fuels), Scope 2 (purchased electricity), and Scope 3 value chain emissions conforming to ISO 14064-1.
+            </p>
+            <div class="pt-3 border-top mt-auto">
+              <span class="badge bg-success-subtle text-success small fw-semibold">ISO 14064-1 & GHG Protocol</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Advisory on ESG Framework & Implementation -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-premium p-4 h-100 d-flex flex-column">
+            <div class="tab-icon mb-3"><i class="bi bi-bar-chart-steps"></i></div>
+            <div class="text-muted small fw-bold mb-1">SERVICE 03</div>
+            <h5 class="fw-bold text-dark mb-2">ESG Framework & Implementation</h5>
+            <p class="small text-secondary flex-grow-1">
+              Custom ESG policy creation, KPI benchmarking, internal data controls, and readiness roadmaps for SEBI BRSR Core and global ratings (EcoVadis, MSCI).
+            </p>
+            <div class="pt-3 border-top mt-auto">
+              <span class="badge bg-success-subtle text-success small fw-semibold">BRSR Core & EcoVadis Ready</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Advisory on Carbon Disclosure Projects (CDP) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-premium p-4 h-100 d-flex flex-column">
+            <div class="tab-icon mb-3"><i class="bi bi-file-earmark-bar-graph"></i></div>
+            <div class="text-muted small fw-bold mb-1">SERVICE 04</div>
+            <h5 class="fw-bold text-dark mb-2">Carbon Disclosure Project (CDP)</h5>
+            <p class="small text-secondary flex-grow-1">
+              Complete support for annual CDP Climate Change, Water Security, and Forests questionnaire filings to boost investor scoring and market reputation.
+            </p>
+            <div class="pt-3 border-top mt-auto">
+              <span class="badge bg-success-subtle text-success small fw-semibold">CDP Climate & Water</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Advisory on ISO 26000 Implementation -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-premium p-4 h-100 d-flex flex-column">
+            <div class="tab-icon mb-3"><i class="bi bi-people-fill"></i></div>
+            <div class="text-muted small fw-bold mb-1">SERVICE 05</div>
+            <h5 class="fw-bold text-dark mb-2">ISO 26000 Social Responsibility</h5>
+            <p class="small text-secondary flex-grow-1">
+              Guidance on integrating social responsibility into organizational DNA—covering organizational governance, human rights, labor practices, and community welfare.
+            </p>
+            <div class="pt-3 border-top mt-auto">
+              <span class="badge bg-success-subtle text-success small fw-semibold">CSR & Stakeholder Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Advisory on ISO 20400 (Sustainable Procurement) -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card-premium p-4 h-100 d-flex flex-column">
+            <div class="tab-icon mb-3"><i class="bi bi-boxes"></i></div>
+            <div class="text-muted small fw-bold mb-1">SERVICE 06</div>
+            <h5 class="fw-bold text-dark mb-2">ISO 20400 Sustainable Procurement</h5>
+            <p class="small text-secondary flex-grow-1">
+              De-risking your supply chain through sustainable procurement policies, Tier-1 vendor ESG audits, and responsible purchasing specifications.
+            </p>
+            <div class="pt-3 border-top mt-auto">
+              <span class="badge bg-success-subtle text-success small fw-semibold">Responsible Supply Chains</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Green Audits -->
+        <div class="col-md-6 col-lg-6">
+          <div class="service-card-premium p-4 h-100 d-flex flex-column">
+            <div class="tab-icon mb-3"><i class="bi bi-tree-fill"></i></div>
+            <div class="text-muted small fw-bold mb-1">SERVICE 07</div>
+            <h5 class="fw-bold text-dark mb-2">Comprehensive Green Audits</h5>
+            <p class="small text-secondary flex-grow-1">
+              Facility-wide assessments examining energy conservation, water management, waste circularity, indoor environmental quality, and campus biodiversity indices.
+            </p>
+            <div class="pt-3 border-top mt-auto">
+              <span class="badge bg-success-subtle text-success small fw-semibold">Facility Green Balance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. CSR Consulting and Advisory -->
+        <div class="col-md-6 col-lg-6">
+          <div class="service-card-premium p-4 h-100 d-flex flex-column">
+            <div class="tab-icon mb-3"><i class="bi bi-heart-pulse-fill"></i></div>
+            <div class="text-muted small fw-bold mb-1">SERVICE 08</div>
+            <h5 class="fw-bold text-dark mb-2">CSR Consulting & Impact Assessment</h5>
+            <p class="small text-secondary flex-grow-1">
+              Structuring statutory CSR programs under Section 135 of the Companies Act, baseline community need assessments, monitoring, and third-party Social Return on Investment (SROI) evaluations.
+            </p>
+            <div class="pt-3 border-top mt-auto">
+              <span class="badge bg-success-subtle text-success small fw-semibold">Section 135 Compliant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="training-academy" class="py-5 section-glow-subtle">
+    <div class="container py-lg-4">
+      <div class="row g-5 align-items-center mb-5">
+        <div class="col-lg-6">
+          <div class="badge-pill-eco mb-2">Executive Capability Building</div>
+          <h2 class="display-5 fw-bold text-dark mb-3">Corporate Sustainability Training</h2>
+          <p class="text-secondary mb-3">
+            We deliver end-to-end, cohort-tailored learning experiences that transform technical sustainability jargon into practical enterprise capabilities. 
+          </p>
+          <p class="text-secondary mb-4">
+            Our modular training programs are calibrated specifically to your organization's present knowledge base, operational timeframes, targeted aspirations, and corporate budget.
+          </p>
+
+          <div class="p-3 bg-white rounded-4 border shadow-sm mb-4">
+            <h6 class="fw-bold text-dark mb-2"><i class="bi bi-check2-circle text-success me-2"></i>Core Training Specializations:</h6>
+            <ul class="list-unstyled row g-2 small text-secondary mb-0">
+              <li class="col-sm-6"><i class="bi bi-arrow-right-circle text-success me-1"></i> GRI Standard Reporting</li>
+              <li class="col-sm-6"><i class="bi bi-arrow-right-circle text-success me-1"></i> ESG & Sustainability Disclosure</li>
+              <li class="col-sm-6"><i class="bi bi-arrow-right-circle text-success me-1"></i> ISO 26000 CSR Awareness</li>
+              <li class="col-sm-6"><i class="bi bi-arrow-right-circle text-success me-1"></i> ISO 20400 Green Procurement</li>
+              <li class="col-sm-6"><i class="bi bi-arrow-right-circle text-success me-1"></i> Carbon Accounting & Management</li>
+              <li class="col-sm-6"><i class="bi bi-arrow-right-circle text-success me-1"></i> Human Rights Due Diligence</li>
+              <li class="col-sm-6"><i class="bi bi-arrow-right-circle text-success me-1"></i> Climate Change Risk & Adaptation</li>
+              <li class="col-sm-6"><i class="bi bi-arrow-right-circle text-success me-1"></i> TCFD Governance Reporting</li>
+            </ul>
+          </div>
+
+          <button onclick="requestCustomTraining()" class="btn btn-eco-primary py-3 px-4">
+            <i class="bi bi-whatsapp"></i> Inquire for Custom Corporate Workshop
+          </button>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="glass-card p-4 p-md-5">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="fw-bold text-dark mb-0">Curriculum Matrix</h5>
+              <span class="badge bg-success-subtle text-success rounded-pill px-3 py-1">16 Specialized Modules</span>
+            </div>
+            <p class="small text-muted mb-4">
+              Select or bundle modules for interactive executive seminars, departmental deep-dives, or enterprise-wide onboarding.
+            </p>
+
+            <div class="d-flex flex-wrap gap-2">
+              <div class="curriculum-pill"><i class="bi bi-journal-bookmark-fill text-success"></i> Foundation in Sustainability</div>
+              <div class="curriculum-pill"><i class="bi bi-file-earmark-text text-success"></i> Sustainability Reporting Intro</div>
+              <div class="curriculum-pill"><i class="bi bi-people text-success"></i> Stakeholder Engagement</div>
+              <div class="curriculum-pill"><i class="bi bi-funnel text-success"></i> Materiality Assessment</div>
+              <div class="curriculum-pill"><i class="bi bi-award text-success"></i> Certified GRI Training</div>
+              <div class="curriculum-pill"><i class="bi bi-card-checklist text-success"></i> National Voluntary Guidelines (NVG)</div>
+              <div class="curriculum-pill"><i class="bi bi-truck text-success"></i> Responsible Supply Chain</div>
+              <div class="curriculum-pill"><i class="bi bi-person-check text-success"></i> Business & Human Rights</div>
+              <div class="curriculum-pill"><i class="bi bi-speedometer2 text-success"></i> Carbon Footprinting</div>
+              <div class="curriculum-pill"><i class="bi bi-sliders text-success"></i> Carbon Management & Optimisation</div>
+              <div class="curriculum-pill"><i class="bi bi-droplet-half text-success"></i> Water Footprinting</div>
+              <div class="curriculum-pill"><i class="bi bi-patch-check text-success"></i> ISO 26000 Standard</div>
+              <div class="curriculum-pill"><i class="bi bi-cart-check text-success"></i> ISO 20400 Sustainable Procurement</div>
+              <div class="curriculum-pill"><i class="bi bi-graph-up-arrow text-success"></i> TCFD Reporting</div>
+              <div class="curriculum-pill"><i class="bi bi-buildings text-success"></i> Corporate Sustainability</div>
+              <div class="curriculum-pill"><i class="bi bi-cash-coin text-success"></i> ESG Impact & Sustainable Investing</div>
+              <div class="curriculum-pill"><i class="bi bi-bullseye text-success"></i> Carbon Reduction Strategy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="iso-certification" class="py-5">
+    <div class="container py-lg-4">
+      <div class="text-center max-w-2xl mx-auto mb-5">
+        <div class="badge-pill-eco mb-2">Accredited Assurance Pathway</div>
+        <h2 class="display-5 fw-bold text-dark">Two-Step ISO Certification Process</h2>
+        <p class="text-secondary col-lg-8 mx-auto">
+          Our structured appraisal and partner-verification methodology delivers internationally recognized certification with zero operational bottlenecks.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Step 1 -->
+        <div class="col-lg-6">
+          <div class="glass-card p-4 p-md-5 h-100 position-relative">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="step-number-circle">1</div>
+              <div>
+                <span class="badge bg-success-subtle text-success small fw-bold">ON-SITE PHASE</span>
+                <h4 class="fw-bold text-dark mb-0">Expert Facility Appraisal</h4>
+              </div>
+            </div>
+            <p class="text-secondary mb-3">
+              Following completion of press standardization and process baseline preparations, our lead engineering team conducts a thorough on-site physical appraisal of your operating machinery, energy flows, and quality monitoring systems.
+            </p>
+            <ul class="list-unstyled small text-secondary mb-0">
+              <li class="mb-2 d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Physical sampling and equipment calibration reviews</li>
+              <li class="mb-2 d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Production proofing and run-sheet conformity testing</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success"></i> Gap-analysis and remediation report within 48 hours</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-lg-6">
+          <div class="glass-card p-4 p-md-5 h-100 position-relative">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="step-number-circle">2</div>
+              <div>
+                <span class="badge bg-success-subtle text-success small fw-bold">VERIFICATION & ISSUANCE</span>
+                <h4 class="fw-bold text-dark mb-0">Independent Partner Assessment</h4>
+              </div>
+            </div>
+            <p class="text-secondary mb-3">
+              The second-stage assessment is executed in conjunction with our authorized ISO Certification partner through rigorous examination of verified proof sheets, OK sheets, and print production manifests.
+            </p>
+            <div class="p-3 bg-light rounded-3 border mb-3">
+              <div class="d-flex align-items-center gap-2 text-dark fw-bold small mb-1">
+                <i class="bi bi-patch-check-fill text-success fs-5"></i>
+                Official ISO 12647-2 Certification
+              </div>
+              <div class="small text-muted">
+                Upon meeting all criteria, your formal accredited certificate—valid for <strong>24 months</strong>—is officially issued by the certification body and delivered directly to your enterprise.
+              </div>
+            </div>
+            <div class="small text-success fw-semibold">
+              <i class="bi bi-shield-lock-fill me-1"></i> Recognized across Indian & international client audit boards.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services-inquiry" class="py-5 section-glow-subtle">
+    <div class="container py-lg-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="glass-card p-4 p-md-5">
+            <div class="text-center mb-4">
+              <div class="badge-pill-eco mb-2">Engage With Senior Advisors</div>
+              <h2 class="display-6 fw-bold text-dark">Initiate Your Services & Training Inquiry</h2>
+              <p class="text-secondary small">
+                Submit your project or training requirements below. Your inquiry is transmitted directly to our Lead Practice Auditor via secure WhatsApp.
+              </p>
+            </div>
+
+            <form id="servicesConsultationForm" onsubmit="handleServicesSubmission(event)">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold text-dark">Contact Person *</label>
+                  <input type="text" id="svcName" class="form-control py-2" placeholder="e.g. Anand Kumar" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold text-dark">Enterprise / Institution *</label>
+                  <input type="text" id="svcCompany" class="form-control py-2" placeholder="e.g. GreenTech Polymers Ltd" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold text-dark">Corporate Email</label>
+                  <input type="email" id="svcEmail" class="form-control py-2" placeholder="anand@company.com">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold text-dark">Location *</label>
+                  <input type="text" id="svcLocation" class="form-control py-2" placeholder="e.g. Chennai / Coimbatore" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-bold text-dark">Primary Service or Training Stream *</label>
+                  <select class="form-select py-2" id="svcCategory" required>
+                    <option value="" selected disabled>Choose advisory or training stream...</option>
+                    <option value="Climate Risk Framework (TCFD)">Climate Risk Framework (TCFD)</option>
+                    <option value="Carbon Audit (GHG Accounting Scope 1-3)">Carbon Audit (GHG Accounting Scope 1-3)</option>
+                    <option value="ESG Framework & Implementation (BRSR)">ESG Framework & Implementation (BRSR)</option>
+                    <option value="Carbon Disclosure Projects (CDP)">Carbon Disclosure Projects (CDP)</option>
+                    <option value="ISO 26000 CSR Advisory">ISO 26000 CSR Advisory</option>
+                    <option value="ISO 20400 Sustainable Procurement">ISO 20400 Sustainable Procurement</option>
+                    <option value="Comprehensive Green Audit">Comprehensive Green Audit</option>
+                    <option value="CSR Consulting & SROI Assessment">CSR Consulting & SROI Assessment</option>
+                    <option value="Corporate Sustainability Training Workshop">Corporate Sustainability Training Workshop</option>
+                    <option value="ISO 12647-2 Certification Audit">ISO 12647-2 Certification Audit</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-bold text-dark">Project Timeline & Specific Scope</label>
+                  <textarea class="form-control" rows="3" id="svcNotes" placeholder="Share targeted certification dates, participant count for training, or facility parameters..."></textarea>
+                </div>
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn btn-eco-primary px-5 py-3">
+                    <i class="bi bi-whatsapp fs-5"></i> Submit via Verified WhatsApp
+                  </button>
+                  <div class="small text-muted mt-2">
+                    <i class="bi bi-shield-lock me-1"></i> Transmitted encrypted directly to the Lead Verification Auditor.
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <div id="serviceSuccessAlert" class="alert alert-success d-none mt-4 text-center border-success" role="alert">
+              <i class="bi bi-check-circle-fill me-2 fs-5"></i>
+              <strong>Connecting to WhatsApp...</strong> Redirecting you now to our Lead Auditor with your pre-filled inquiry.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-5" style="background-color: var(--eco-dark); color: #94A3B8;">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img 
+              src="./images/AKREcoTechLogo.jpeg" 
+              alt="AKR EcoTech Logo" 
+              width="36" 
+              height="36" 
+              class="brand-logo-img rounded-circle bg-white p-1" 
+              style="width: 36px !important; height: 36px !important; object-fit: contain !important;"
+              onerror="this.onerror=null; this.src='AKREcoTechLogo.jpeg'; if(!this.src.includes('logo')) this.src='logo.jpg';"
+            >
+            <span class="fs-4 fw-bold font-display text-white">AKR <span style="color: var(--eco-green);">ECOTECH</span></span>
+          </div>
+          <p class="small mb-3">
+            AKR EcoTech is an MSME-registered independent sustainability auditing and advisory body delivering accredited VVA, ESG disclosures, and capacity training across India.
+          </p>
+          <span class="badge bg-success-subtle text-success small">Govt. of India UDYAM MSME Registered</span>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-white fw-bold mb-3">Fast Links</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="index.html" class="text-decoration-none text-secondary">Home</a></li>
+            <li class="mb-2"><a href="index.html#calculator" class="text-decoration-none text-secondary">Carbon Estimator</a></li>
+            <li class="mb-2"><a href="index.html#vva-journey" class="text-decoration-none text-secondary">VVA Life-Cycle</a></li>
+            <li class="mb-2"><a href="index.html#diagnostic" class="text-decoration-none text-secondary">Diagnostic Tool</a></li>
+            <li class="mb-2"><a href="services.html" class="text-decoration-none text-success fw-semibold">Services & Advisory</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h6 class="text-white fw-bold mb-3">Advisory Standards</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2">GRI Sustainability Standards</li>
+            <li class="mb-2">TCFD Climate Risk Guidelines</li>
+            <li class="mb-2">ISO 26000 Social Responsibility</li>
+            <li class="mb-2">ISO 20400 Sustainable Sourcing</li>
+            <li class="mb-2">ISO 12647-2 Certification Audit</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h6 class="text-white fw-bold mb-3">Auditing Desk</h6>
+          <ul class="list-unstyled small">
+            <li class="d-flex gap-2 mb-2"><i class="bi bi-geo-alt text-success"></i> Tamil Nadu, India</li>
+            <li class="d-flex gap-2 mb-2"><i class="bi bi-shield-check text-success"></i> MSME Certified Practice</li>
+            <li class="d-flex gap-2 mb-2">
+              <i class="bi bi-whatsapp text-success"></i> 
+              <a href="javascript:void(0)" onclick="triggerDirectWhatsApp('Services Footer Link')" class="text-secondary text-decoration-none">
+                Direct Auditor Desk (Click to Chat)
+              </a>
+            </li>
+            <li class="d-flex gap-2"><i class="bi bi-clock text-success"></i> Mon - Sat: 9:00 AM - 6:30 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-top border-secondary border-opacity-25 pt-4 text-center small">
+        <p class="mb-0">&copy; <span id="currentYear"></span> AKR EcoTech. All rights reserved. Built for accredited environmental stewardship.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Confidential WhatsApp Routing Engine (Base64 encoded)
+    const _E = "OTE5NDQ0NTU1MjU0";
+    function getAuditDeskRoute() {
+      try {
+        return window.atob(_E);
+      } catch (err) {
+        return "919444555254";
+      }
+    }
+
+    function triggerDirectWhatsApp(source) {
+      const target = getAuditDeskRoute();
+      const message = `Hello AKR EcoTech, I am reaching out from your Services page (${source}). I would like to consult with an advisor regarding your advisory, training, or certification programs.`;
+      const url = `https://wa.me/${target}?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+
+    function requestCustomTraining() {
+      const target = getAuditDeskRoute();
+      const message = `Hello AKR EcoTech, I would like to inquire about customized Corporate Sustainability Training modules (GRI, ISO 26000, Carbon Accounting, TCFD) for our organization.`;
+      const url = `https://wa.me/${target}?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+
+    function handleServicesSubmission(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('svcName').value.trim();
+      const company = document.getElementById('svcCompany').value.trim();
+      const email = document.getElementById('svcEmail').value.trim() || 'Not specified';
+      const location = document.getElementById('svcLocation').value.trim();
+      const category = document.getElementById('svcCategory').value;
+      const notes = document.getElementById('svcNotes').value.trim() || 'None provided';
+
+      const alertBox = document.getElementById('serviceSuccessAlert');
+      alertBox.classList.remove('d-none');
+      alertBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      const textMessage = 
+`🌱 *NEW SERVICES & ADVISORY INQUIRY - AKR ECOTECH*
+---------------------------------------
+👤 *Contact Person:* ${name}
+🏢 *Company / Institution:* ${company}
+📍 *Location:* ${location}
+📧 *Email:* ${email}
+📋 *Service / Training Stream:* ${category}
+📝 *Scope / Timeline:* ${notes}
+---------------------------------------
+_Sent via AKR EcoTech Services Portal_`;
+
+      const target = getAuditDeskRoute();
+      const whatsappUrl = `https://wa.me/${target}?text=${encodeURIComponent(textMessage)}`;
+
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
+        document.getElementById('servicesConsultationForm').reset();
+        alertBox.classList.add('d-none');
+      }, 900);
+    }
+  </script>
+</body>
+</html>

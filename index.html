@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AKR EcoTech | Premier Sustainability Audits & VVA Services</title>
+  <meta name="description" content="AKR EcoTech - MSME registered independent Validation, Verification, and Assurance (VVA) provider. ISO 14064, GHG Protocol, and BRSR sustainability audits.">
+
+  <!-- External Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- External Bootstrap 5.3 CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  
+  <!-- External Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Chart.js CDN for live carbon visualizer -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top navbar-glass py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+       <//img 
+          src="./images/AKREcoTechLogo.jpeg" 
+          alt="AKR EcoTech Logo" 
+          width="44" 
+          height="44" 
+          class="brand-logo-img" 
+          style="width: 44px !important; height: 44px !important; max-width: 44px !important; max-height: 44px !important; object-fit: contain !important;"
+          onerror="this.onerror=null; this.src='AKREcoTechLogo.jpeg'; if(!this.src.includes('logo')) this.src='logo.jpg';"
+        //>
+        <div class="d-flex flex-column lh-1">
+          <span class="fw-bold fs-4 font-display text-dark" style="letter-spacing: -0.02em;">AKR</span>
+          <span class="fw-bold text-success" style="font-size: 0.72rem; letter-spacing: 0.24em; color: var(--eco-green) !important;">ECOTECH</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-list fs-2 text-dark"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-semibold">
+          <li class="nav-item"><a class="nav-link px-3" href="#calculator">Carbon Tool</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#vva-journey">VVA Ecosystem</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#diagnostic">Audit Diagnostic</a></li>
+          <li class="nav-item"><a class="nav-link px-3 text-success fw-bold" href="./akr_ecotech_services_page.html">Services</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <button type="button" onclick="triggerDirectWhatsApp('Navbar Button')" class="btn btn-outline-success rounded-pill px-3 py-2 fw-semibold d-inline-flex align-items-center gap-2">
+            <i class="bi bi-whatsapp"></i> Quick WhatsApp
+          </button>
+          <a href="#contact" class="btn btn-eco-primary">
+            <i class="bi bi-shield-check"></i> Book Audit
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <button type="button" class="whatsapp-floating-btn" onclick="triggerDirectWhatsApp('Floating Widget Prompt')" aria-label="Chat with AKR EcoTech on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+    <span>Chat with Auditor</span>
+  </button>
+
+  <header id="hero" class="hero-glow-bg py-5 py-lg-6">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <div class="badge-pill-eco mb-3">
+            <span class="pulse-dot"></span> MSME Registered Independent VVA Body
+          </div>
+          <h1 class="display-4 fw-bold text-dark mb-3">
+            Science-Backed <span style="color: var(--eco-green);">Validation, Verification & Assurance</span> for Sustainable Industry.
+          </h1>
+          <p class="lead text-secondary mb-4 col-xl-11">
+            Empowering Indian enterprises and MSMEs to achieve verified carbon neutrality, regulatory BRSR assurance, and global supply chain readiness through accredited ISO 14064 audits.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mb-5">
+            <a href="#calculator" class="btn btn-eco-primary py-3 px-4">
+              <i class="bi bi-calculator"></i> Run Carbon Estimator
+            </a>
+            <a href="#diagnostic" class="btn btn-eco-outline py-3 px-4">
+              <i class="bi bi-search"></i> Find Audit Pathway
+            </a>
+          </div>
+
+          <div class="row g-3 border-top pt-4">
+            <div class="col-6 col-sm-3">
+              <div class="fw-bold fs-4 text-dark">ISO 14064</div>
+              <div class="small text-muted">GHG Specification</div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <div class="fw-bold fs-4 text-dark">ISAE 3000</div>
+              <div class="small text-muted">Assurance Standard</div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <div class="fw-bold fs-4 text-dark">SEBI BRSR</div>
+              <div class="small text-muted">Core ESG Attestation</div>
+            </div>
+            <div class="col-6 col-sm-3">
+              <div class="fw-bold fs-4 text-dark">BEE Certified</div>
+              <div class="small text-muted">Energy Methodology</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="glass-card p-4 p-md-5 position-relative shadow-sm">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h5 class="fw-bold text-dark mb-0">Live Audit Desk</h5>
+              <span class="badge bg-success-subtle text-success border border-success-subtle rounded-pill px-3 py-1 small">
+                Auditors Active
+              </span>
+            </div>
+
+            <div class="p-3 bg-light rounded-4 mb-3 border">
+              <div class="small text-muted mb-1">Cumulative Verified Industrial Reductions</div>
+              <div class="fs-2 fw-bold font-display text-dark" id="tickerTco2">
+                48,920 <span class="fs-6 text-success fw-normal">tCO₂e</span>
+              </div>
+            </div>
+
+            <div class="p-3 bg-light rounded-4 mb-4 border">
+              <div class="small text-muted mb-1">Accreditation Benchmark</div>
+              <div class="d-flex align-items-center gap-2 text-dark fw-bold">
+                <i class="bi bi-patch-check-fill text-success fs-5"></i>
+                GHG Protocol & UN SDGs Aligned
+              </div>
+            </div>
+
+            <div class="d-grid">
+              <button onclick="triggerDirectWhatsApp('Hero Box Direct Connect')" class="btn btn-eco-primary py-3">
+                <i class="bi bi-whatsapp"></i> Inquire Direct via WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="calculator" class="py-5 section-glow-subtle">
+    <div class="container py-lg-4">
+      <div class="text-center max-w-2xl mx-auto mb-5">
+        <div class="badge-pill-eco mb-2">Interactive Environmental Engineering</div>
+        <h2 class="display-5 fw-bold text-dark">Industrial Carbon Estimator</h2>
+        <p class="text-secondary col-lg-8 mx-auto">
+          Simulate Scope 1 (Direct Fuel), Scope 2 (Grid Electricity), and Scope 3 (Logistics) annual footprint baselines in real time.
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <div class="col-lg-6">
+          <div class="glass-card p-4 p-md-5 h-100">
+            <h4 class="fw-bold text-dark mb-4">Operational Inputs</h4>
+
+            <div class="mb-4">
+              <label class="form-label small fw-bold text-dark">Industrial Sector Focus</label>
+              <select id="calcIndustry" class="form-select py-2" onchange="calculateEmissions()">
+                <option value="1.0" selected>General Manufacturing / Assembly</option>
+                <option value="1.35">Textile, Dyeing & Finishing (High Thermal)</option>
+                <option value="1.5">Automotive & Foundry Engineering</option>
+                <option value="1.15">Chemical & Processing Plant</option>
+                <option value="0.75">IT Parks & Commercial Warehouses</option>
+              </select>
+            </div>
+
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-1">
+                <label class="form-label small fw-bold text-dark mb-0">Diesel / Generator Fuel (Monthly)</label>
+                <span class="badge bg-success-subtle text-success fw-bold" id="valFuel">4,000 L</span>
+              </div>
+              <input type="range" class="form-range" id="inputFuel" min="0" max="40000" step="500" value="4000" oninput="calculateEmissions()">
+            </div>
+
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-1">
+                <label class="form-label small fw-bold text-dark mb-0">Grid Power Consumption (Monthly)</label>
+                <span class="badge bg-success-subtle text-success fw-bold" id="valElectricity">35,000 kWh</span>
+              </div>
+              <input type="range" class="form-range" id="inputElectricity" min="2000" max="250000" step="2000" value="35000" oninput="calculateEmissions()">
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <label class="form-label small fw-bold text-dark mb-0">Supply Chain Road Freight (Monthly)</label>
+                <span class="badge bg-success-subtle text-success fw-bold" id="valFreight">15,000 T-km</span>
+              </div>
+              <input type="range" class="form-range" id="inputFreight" min="0" max="100000" step="1000" value="15000" oninput="calculateEmissions()">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="glass-card p-4 p-md-5 h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="fw-bold text-dark mb-0">Emissions Breakdown</h4>
+                <span class="badge bg-light text-secondary border">GHG Protocol Verified</span>
+              </div>
+
+              <div class="text-center p-3 bg-light rounded-4 mb-4 border">
+                <div class="small text-muted fw-semibold">Estimated Annual Baseline</div>
+                <div class="display-5 fw-bold text-dark">
+                  <span id="totalCo2Display">498.4</span> <span class="fs-5 text-success font-display">tCO₂e / yr</span>
+                </div>
+              </div>
+
+              <div style="height: 220px;" class="position-relative mb-4">
+                <canvas id="emissionsChart"></canvas>
+              </div>
+
+              <div class="row g-2 text-center small mb-3">
+                <div class="col-4">
+                  <div class="p-2 border rounded-3 bg-white">
+                    <span class="text-muted d-block" style="font-size: 0.75rem;">Scope 1</span>
+                    <strong class="text-dark" id="s1Val">128.6 t</strong>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="p-2 border rounded-3 bg-white">
+                    <span class="text-muted d-block" style="font-size: 0.75rem;">Scope 2</span>
+                    <strong class="text-dark" id="s2Val">344.4 t</strong>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="p-2 border rounded-3 bg-white">
+                    <span class="text-muted d-block" style="font-size: 0.75rem;">Scope 3</span>
+                    <strong class="text-dark" id="s3Val">25.4 t</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-grid mt-3">
+              <a href="#contact" class="btn btn-eco-primary py-3">
+                <i class="bi bi-file-earmark-check"></i> Request Accredited Baseline Audit
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="vva-journey" class="py-5">
+    <div class="container py-lg-4">
+      <div class="text-center max-w-2xl mx-auto mb-5">
+        <div class="badge-pill-eco mb-2">Accredited Architecture</div>
+        <h2 class="display-5 fw-bold text-dark">Understanding VVA Services</h2>
+        <p class="text-secondary col-lg-8 mx-auto">
+          Validation, Verification, and Assurance form the triad of international climate credibility, ensuring your assertions withstand scrutiny.
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-5">
+          <div class="d-flex flex-column gap-3">
+            <button class="vva-tab-btn active" onclick="switchVvaTab(0)">
+              <div class="d-flex align-items-center gap-3">
+                <div class="tab-icon"><i class="bi bi-compass"></i></div>
+                <div>
+                  <div class="text-dark">Phase 01: Validation</div>
+                  <div class="small text-muted fw-normal">Pre-Implementation Feasibility (ISO 14064-3)</div>
+                </div>
+              </div>
+            </button>
+
+            <button class="vva-tab-btn" onclick="switchVvaTab(1)">
+              <div class="d-flex align-items-center gap-3">
+                <div class="tab-icon"><i class="bi bi-patch-check"></i></div>
+                <div>
+                  <div class="text-dark">Phase 02: Verification</div>
+                  <div class="small text-muted fw-normal">Post-Facto GHG Quantification & Audit</div>
+                </div>
+              </div>
+            </button>
+
+            <button class="vva-tab-btn" onclick="switchVvaTab(2)">
+              <div class="d-flex align-items-center gap-3">
+                <div class="tab-icon"><i class="bi bi-shield-shaded"></i></div>
+                <div>
+                  <div class="text-dark">Phase 03: Assurance</div>
+                  <div class="small text-muted fw-normal">ISAE 3000 & SEBI BRSR Core Attestation</div>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="glass-card p-4 p-md-5" id="vvaDetailsCard">
+            <!-- Dynamically populated via renderVvaDetails() -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="diagnostic" class="py-5 section-glow-subtle">
+    <div class="container py-lg-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="glass-card p-4 p-md-5">
+            <div class="d-flex justify-content-between align-items-center border-bottom pb-3 mb-4">
+              <div>
+                <span class="badge-pill-eco mb-1">Diagnostic Navigator</span>
+                <h3 class="fw-bold text-dark mb-0" id="wizardStepTitle">Step 1 of 3: Enterprise Classification</h3>
+              </div>
+              <span class="text-muted small fw-bold" id="wizardStepCount">Progress: 33%</span>
+            </div>
+
+            <!-- Step 1: Scale -->
+            <div class="wizard-step active" id="step1">
+              <p class="text-secondary mb-4">What best describes your facility or operational footprint?</p>
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <div class="selection-box h-100" onclick="selectDiagnosticOption(1, 'msme', this)">
+                    <div class="fs-4 text-success mb-2"><i class="bi bi-shop-window"></i></div>
+                    <h6 class="fw-bold text-dark">Micro or Small Unit</h6>
+                    <p class="small text-muted mb-0">Under ₹50 Cr annual turnover, single facility or manufacturing workshop.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="selection-box h-100" onclick="selectDiagnosticOption(1, 'medium_corp', this)">
+                    <div class="fs-4 text-success mb-2"><i class="bi bi-buildings"></i></div>
+                    <h6 class="fw-bold text-dark">Medium Enterprise</h6>
+                    <p class="small text-muted mb-0">Multi-facility, heavy power consumer, tier-1 vendor to MNC buyers.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="selection-box h-100" onclick="selectDiagnosticOption(1, 'large_listed', this)">
+                    <div class="fs-4 text-success mb-2"><i class="bi bi-bank"></i></div>
+                    <h6 class="fw-bold text-dark">Listed / Top 1000 Entity</h6>
+                    <p class="small text-muted mb-0">Mandated for SEBI BRSR Core, investor reporting, and comprehensive ESG audits.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2: Goal -->
+            <div class="wizard-step" id="step2">
+              <p class="text-secondary mb-4">What is your principal compliance or operational objective?</p>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="selection-box h-100" onclick="selectDiagnosticOption(2, 'cost_energy', this)">
+                    <div class="fs-4 text-success mb-2"><i class="bi bi-lightning-charge"></i></div>
+                    <h6 class="fw-bold text-dark">Direct Utility Cost Reduction</h6>
+                    <p class="small text-muted mb-0">Cut power & diesel bills by 15-25% via comprehensive electrical/thermal energy audits.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="selection-box h-100" onclick="selectDiagnosticOption(2, 'carbon_esg', this)">
+                    <div class="fs-4 text-success mb-2"><i class="bi bi-globe-americas"></i></div>
+                    <h6 class="fw-bold text-dark">Supply Chain & Carbon Verification</h6>
+                    <p class="small text-muted mb-0">Satisfy client procurement tenders, CBAM export regulations, or ESG rating demands.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 3: Result -->
+            <div class="wizard-step" id="step3">
+              <div class="p-4 bg-light rounded-4 border mb-4">
+                <span class="badge bg-success text-white px-3 py-1 rounded-pill mb-2">Recommended Audit Scope</span>
+                <h4 class="fw-bold text-dark mb-2" id="diagTitle">Custom Decarbonization Roadmap</h4>
+                <p class="text-secondary" id="diagDescription">Preparing tailored solution...</p>
+                <div id="diagPoints"></div>
+              </div>
+
+              <div class="text-center">
+                <button class="btn btn-eco-primary px-5 py-3" onclick="applyDiagToContact()">
+                  <i class="bi bi-clipboard2-check"></i> Apply This Recommendation to Inquiry
+                </button>
+              </div>
+            </div>
+
+            <!-- Wizard Controls -->
+            <div class="d-flex justify-content-between mt-4 pt-3 border-top" id="wizardButtons">
+              <button class="btn btn-outline-secondary rounded-pill px-4" id="prevBtn" onclick="prevWizardStep()" disabled>
+                <i class="bi bi-arrow-left"></i> Previous
+              </button>
+              <button class="btn btn-eco-primary" id="nextBtn" onclick="nextWizardStep()" disabled>
+                Next <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5 section-glow-subtle">
+    <div class="container py-lg-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="glass-card p-4 p-md-5">
+            <div class="text-center mb-4">
+              <div class="badge-pill-eco mb-2">Connect With Certified Auditors</div>
+              <h2 class="display-6 fw-bold text-dark">Initiate Your Sustainability Audit</h2>
+              <p class="text-secondary small">
+                Submit your facility specifications. Inquiries connect directly to our Lead Verification Desk via secure WhatsApp transmission.
+              </p>
+            </div>
+
+            <form id="auditForm" onsubmit="handleFormSubmission(event)">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold text-dark">Contact Person *</label>
+                  <input type="text" id="contactName" class="form-control py-2" placeholder="e.g. Ramesh Krishnan" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold text-dark">Enterprise / Company Name *</label>
+                  <input type="text" id="contactCompany" class="form-control py-2" placeholder="e.g. Apex Engineering Pvt Ltd" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold text-dark">Official Email ID</label>
+                  <input type="email" id="contactEmail" class="form-control py-2" placeholder="name@company.com">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold text-dark">Your Facility Location *</label>
+                  <input type="text" id="contactLocation" class="form-control py-2" placeholder="e.g. Coimbatore, Tamil Nadu" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-bold text-dark">Service Required *</label>
+                  <select class="form-select py-2" id="serviceSelect" required>
+                    <option value="" selected disabled>Select verification/audit category...</option>
+                    <option value="Validation, Verification & Assurance (VVA)">Full VVA (Validation, Verification & Assurance)</option>
+                    <option value="Scope 1, 2, 3 GHG Carbon Accounting">Scope 1, 2, 3 GHG Accounting</option>
+                    <option value="Level 2 Industrial Energy Audit">Level 2 Industrial Energy Audit</option>
+                    <option value="SEBI BRSR / ESG Report Assurance">SEBI BRSR / ESG Report Assurance</option>
+                    <option value="Water Balance & ZLD Audit">Water Balance & ZLD Audit</option>
+                    <option value="Custom MSME Decarbonization Roadmap">Custom MSME Decarbonization Roadmap</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label small fw-bold text-dark">Facility Scope & Notes</label>
+                  <textarea class="form-control" rows="3" id="facilityNotes" placeholder="Describe operational capacity, connected load, or specific audit goals..."></textarea>
+                </div>
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn btn-eco-primary px-5 py-3">
+                    <i class="bi bi-whatsapp fs-5"></i> Submit via Verified WhatsApp
+                  </button>
+                  <div class="small text-muted mt-2">
+                    <i class="bi bi-shield-lock me-1"></i> Transmitted encrypted directly to the Lead Verification Auditor.
+                  </div>
+                </div>
+              </div>
+            </form>
+
+            <div id="formSuccessAlert" class="alert alert-success d-none mt-4 text-center border-success" role="alert">
+              <i class="bi bi-check-circle-fill me-2 fs-5"></i>
+              <strong>Connecting to WhatsApp...</strong> Redirecting you now to our Lead Auditor with your pre-filled inquiry.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-5" style="background-color: var(--eco-dark); color: #94A3B8;">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img 
+              src="./images/AKREcoTechLogo.jpeg" 
+              alt="AKR EcoTech Logo" 
+              width="36" 
+              height="36" 
+              class="brand-logo-img rounded-circle bg-white p-1" 
+              style="width: 36px !important; height: 36px !important; object-fit: contain !important;"
+              onerror="this.onerror=null; this.src='AKREcoTechLogo.jpeg'; if(!this.src.includes('logo')) this.src='logo.jpg';"
+            >
+            <span class="fs-4 fw-bold font-display text-white">AKR <span style="color: var(--eco-green);">ECOTECH</span></span>
+          </div>
+          <p class="small mb-3">
+            AKR EcoTech is a registered MSME sustainability auditing powerhouse delivering accredited Validation, Verification, and Assurance (VVA) and industrial decarbonization assessments across India.
+          </p>
+          <span class="badge bg-success-subtle text-success small">Govt. of India UDYAM MSME Registered</span>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h6 class="text-white fw-bold mb-3">Fast Links</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#hero" class="text-decoration-none text-secondary">Home</a></li>
+            <li class="mb-2"><a href="#calculator" class="text-decoration-none text-secondary">Carbon Estimator</a></li>
+            <li class="mb-2"><a href="#vva-journey" class="text-decoration-none text-secondary">VVA Life-Cycle</a></li>
+            <li class="mb-2"><a href="#diagnostic" class="text-decoration-none text-secondary">Diagnostic Tool</a></li>
+            <li class="mb-2"><a href="./akr_ecotech_services_page.html" class="text-decoration-none text-success fw-semibold">Services & Advisory</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h6 class="text-white fw-bold mb-3">VVA Standards</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2">ISO 14064-1, 2, 3 GHG Audits</li>
+            <li class="mb-2">ISAE 3000 Non-Financial Assurance</li>
+            <li class="mb-2">SEBI BRSR Core Verification</li>
+            <li class="mb-2">BEE Thermal & Electrical Audits</li>
+            <li class="mb-2">Water Balance & ZLD Standards</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h6 class="text-white fw-bold mb-3">Auditing Desk</h6>
+          <ul class="list-unstyled small">
+            <li class="d-flex gap-2 mb-2"><i class="bi bi-geo-alt text-success"></i> Tamil Nadu, India</li>
+            <li class="d-flex gap-2 mb-2"><i class="bi bi-shield-check text-success"></i> MSME Certified Practice</li>
+            <li class="d-flex gap-2 mb-2">
+              <i class="bi bi-whatsapp text-success"></i> 
+              <a href="javascript:void(0)" onclick="triggerDirectWhatsApp('Footer Link')" class="text-secondary text-decoration-none">
+                Direct Auditor Desk (Click to Chat)
+              </a>
+            </li>
+            <li class="d-flex gap-2"><i class="bi bi-clock text-success"></i> Mon - Sat: 9:00 AM - 6:30 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-top border-secondary border-opacity-25 pt-4 text-center small">
+        <p class="mb-0">&copy; <span id="currentYear"></span> AKR EcoTech. All rights reserved. Built for accredited environmental stewardship.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5.3 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Confidential WhatsApp Routing Engine (Base64 obfuscation)
+    const _E = "OTE5NDQ0NTU1MjU0";
+    function getAuditDeskRoute() {
+      try {
+        return window.atob(_E);
+      } catch (err) {
+        return "919444555254";
+      }
+    }
+
+    function triggerDirectWhatsApp(source) {
+      const target = getAuditDeskRoute();
+      const message = `Hello AKR EcoTech, I am reaching out from your website (${source}). I would like to consult with an auditor regarding our company's sustainability compliance and VVA requirements.`;
+      const url = `https://wa.me/${target}?text=${encodeURIComponent(message)}`;
+      window.open(url, '_blank');
+    }
+
+    const vvaData = [
+      {
+        badge: "Ex-Ante Assessment",
+        title: "Phase 1: Project Validation",
+        subtitle: "ISO 14064-3 / Clean Development Standards",
+        desc: "Validation evaluates the reasonableness, feasibility, and technical assumptions of planned decarbonization initiatives (such as solar conversion, waste heat recovery, or bio-fuel transition) BEFORE capital deployment.",
+        bullets: [
+          "Examines baseline emission methodologies & additionality criteria",
+          "Confirms boundary definitions against carbon registry protocols",
+          "Delivers Formal Validation Opinion enabling carbon credit registration"
+        ]
+      },
+      {
+        badge: "Ex-Post Verification",
+        title: "Phase 2: GHG Inventory Verification",
+        subtitle: "ISO 14064-1 & Corporate GHG Protocol",
+        desc: "Verification evaluates historical performance through evidence-based on-site audits. Verifiers audit electricity utility meters, fuel invoices, logistics manifests, and refrigerants to substantiate true reductions.",
+        bullets: [
+          "Physical sampling and calibration checks of monitoring instruments",
+          "Evaluation against defined materiality thresholds (<5% error)",
+          "Issuance of accredited Verification Statement for supply chain readiness"
+        ]
+      },
+      {
+        badge: "Regulatory Assurance",
+        title: "Phase 3: Sustainability Assurance",
+        subtitle: "ISAE 3000 / AA1000AS / SEBI BRSR Core",
+        desc: "Assurance provides high-level stakeholder credibility over complete ESG non-financial disclosures, mitigating greenwashing risks for listed companies and Tier-1 exporters under EU CBAM mandates.",
+        bullets: [
+          "Limited or Reasonable assurance attestations by lead audit professionals",
+          "Verification of water neutrality, circularity, and workforce ESG metrics",
+          "Submission-ready documentation for board disclosures & shareholder scrutiny"
+        ]
+      }
+    ];
+
+    function renderVvaDetails(index) {
+      const card = document.getElementById('vvaDetailsCard');
+      const item = vvaData[index];
+      card.innerHTML = `
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <div>
+            <span class="badge bg-success-subtle text-success px-3 py-1 rounded-pill mb-2 fw-semibold">${item.badge}</span>
+            <h3 class="fw-bold text-dark mb-1">${item.title}</h3>
+            <div class="text-muted small fw-bold text-uppercase tracking-wider">${item.subtitle}</div>
+          </div>
+        </div>
+        <p class="text-secondary mb-4">${item.desc}</p>
+        <div class="p-3 bg-light rounded-4 mb-4 border">
+          <h6 class="fw-bold text-dark mb-2">Audit Procedures Executed:</h6>
+          <ul class="list-unstyled mb-0 small text-secondary">
+            ${item.bullets.map(b => `<li class="mb-2 d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-success fs-6"></i> ${b}</li>`).join('')}
+          </ul>
+        </div>
+        <a href="#contact" class="btn btn-eco-primary py-2 px-4">
+          <i class="bi bi-check-lg"></i> Request This VVA Phase
+        </a>
+      `;
+    }
+
+    function switchVvaTab(index) {
+      const buttons = document.querySelectorAll('.vva-tab-btn');
+      buttons.forEach((btn, i) => {
+        btn.classList.toggle('active', i === index);
+      });
+      renderVvaDetails(index);
+    }
+
+    renderVvaDetails(0);
+
+    let chartInstance = null;
+
+    function calculateEmissions() {
+      const industryMultiplier = parseFloat(document.getElementById('calcIndustry').value) || 1.0;
+      const fuelLiters = parseFloat(document.getElementById('inputFuel').value) || 0;
+      const powerKwh = parseFloat(document.getElementById('inputElectricity').value) || 0;
+      const freightTkm = parseFloat(document.getElementById('inputFreight').value) || 0;
+
+      document.getElementById('valFuel').innerText = fuelLiters.toLocaleString() + ' L';
+      document.getElementById('valElectricity').innerText = powerKwh.toLocaleString() + ' kWh';
+      document.getElementById('valFreight').innerText = freightTkm.toLocaleString() + ' T-km';
+
+      const annualScope1 = (fuelLiters * 12 * 2.68 * industryMultiplier) / 1000;
+      const annualScope2 = (powerKwh * 12 * 0.82 * industryMultiplier) / 1000;
+      const annualScope3 = (freightTkm * 12 * 0.15 * industryMultiplier) / 1000;
+      const total = annualScope1 + annualScope2 + annualScope3;
+
+      document.getElementById('totalCo2Display').innerText = total.toFixed(1);
+      document.getElementById('s1Val').innerText = annualScope1.toFixed(1) + ' t';
+      document.getElementById('s2Val').innerText = annualScope2.toFixed(1) + ' t';
+      document.getElementById('s3Val').innerText = annualScope3.toFixed(1) + ' t';
+
+      const ctx = document.getElementById('emissionsChart').getContext('2d');
+      if (chartInstance) {
+        chartInstance.data.datasets[0].data = [annualScope1, annualScope2, annualScope3];
+        chartInstance.update();
+      } else {
+        chartInstance = new Chart(ctx, {
+          type: 'doughnut',
+          data: {
+            labels: ['Scope 1 (Direct)', 'Scope 2 (Power)', 'Scope 3 (Logistics)'],
+            datasets: [{
+              data: [annualScope1, annualScope2, annualScope3],
+              backgroundColor: ['#44A034', '#1F5A1A', '#A3E396'],
+              borderWidth: 0,
+              hoverOffset: 6
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                position: 'bottom',
+                labels: { boxWidth: 12, font: { family: 'Plus Jakarta Sans', size: 11 } }
+              }
+            },
+            cutout: '70%'
+          }
+        });
+      }
+    }
+
+    calculateEmissions();
+
+    let wizardStep = 1;
+    let selectedScale = null;
+    let selectedGoal = null;
+
+    function selectDiagnosticOption(step, value, element) {
+      if (step === 1) {
+        selectedScale = value;
+        document.querySelectorAll('#step1 .selection-box').forEach(el => el.classList.remove('selected'));
+        element.classList.add('selected');
+        document.getElementById('nextBtn').disabled = false;
+      } else if (step === 2) {
+        selectedGoal = value;
+        document.querySelectorAll('#step2 .selection-box').forEach(el => el.classList.remove('selected'));
+        element.classList.add('selected');
+        document.getElementById('nextBtn').disabled = false;
+      }
+    }
+
+    function nextWizardStep() {
+      if (wizardStep === 1) {
+        wizardStep = 2;
+        document.getElementById('step1').classList.remove('active');
+        document.getElementById('step2').classList.add('active');
+        document.getElementById('wizardStepTitle').innerText = "Step 2 of 3: Primary Sustainability Objective";
+        document.getElementById('wizardStepCount').innerText = "Progress: 66%";
+        document.getElementById('prevBtn').disabled = false;
+        document.getElementById('nextBtn').disabled = !selectedGoal;
+      } else if (wizardStep === 2) {
+        wizardStep = 3;
+        document.getElementById('step2').classList.remove('active');
+        document.getElementById('step3').classList.add('active');
+        document.getElementById('wizardStepTitle').innerText = "Diagnostic Complete";
+        document.getElementById('wizardStepCount').innerText = "100%";
+        document.getElementById('wizardButtons').classList.add('d-none');
+        generateDiagnosticSolution();
+      }
+    }
+
+    function prevWizardStep() {
+      if (wizardStep === 2) {
+        wizardStep = 1;
+        document.getElementById('step2').classList.remove('active');
+        document.getElementById('step1').classList.add('active');
+        document.getElementById('wizardStepTitle').innerText = "Step 1 of 3: Enterprise Classification";
+        document.getElementById('wizardStepCount').innerText = "Progress: 33%";
+        document.getElementById('prevBtn').disabled = true;
+        document.getElementById('nextBtn').disabled = false;
+      }
+    }
+
+    function generateDiagnosticSolution() {
+      const titleEl = document.getElementById('diagTitle');
+      const descEl = document.getElementById('diagDescription');
+      const pointsEl = document.getElementById('diagPoints');
+
+      if (selectedScale === 'msme' && selectedGoal === 'cost_energy') {
+        titleEl.innerText = "MSME Rapid Energy Efficiency & Cost Audit";
+        descEl.innerText = "Tailored for standalone production units wanting immediate utility bill reductions without tedious administrative overhead.";
+        pointsEl.innerHTML = `
+          <ul class="list-unstyled mb-0 small text-secondary">
+            <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>2-day on-site thermal & electrical power leak scan</li>
+            <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Detailed ROI calculations on high-efficiency equipment upgrades</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Subsidized MSME energy audit documentation</li>
+          </ul>`;
+      } else if (selectedScale === 'msme' && selectedGoal === 'carbon_esg') {
+        titleEl.innerText = "SME Carbon Baseline & Supply Chain Scope 1-2 Audit";
+        descEl.innerText = "Equips small and medium suppliers to fulfill tier-1 green procurement requirements from multinational buyers.";
+        pointsEl.innerHTML = `
+          <ul class="list-unstyled mb-0 small text-secondary">
+            <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>GHG Protocol corporate carbon footprint accounting</li>
+            <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Pre-validation report for vendor onboarding tenders</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Official Certificate of Carbon Verification</li>
+          </ul>`;
+      } else if (selectedScale === 'medium_corp' && selectedGoal === 'cost_energy') {
+        titleEl.innerText = "Enterprise Comprehensive Multi-Facility Energy & Power Audit";
+        descEl.innerText = "Deep-dive diagnostic covering heavy mechanical systems, automated HVAC chillers, transformers, and regenerative power.";
+        pointsEl.innerHTML = `
+          <ul class="list-unstyled mb-0 small text-secondary">
+            <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Full ISO 50001 energy management compliance roadmap</li>
+            <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Ultrasonic compressed air and thermographic electrical inspection</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Executive CAPEX payback model for executive leadership</li>
+          </ul>`;
+      } else {
+        titleEl.innerText = "Full VVA & SEBI BRSR Core Limited Assurance Package";
+        descEl.innerText = "Designed for market leaders and listed organizations requiring independent third-party assurance for shareholders and regulators.";
+        pointsEl.innerHTML = `
+          <ul class="list-unstyled mb-0 small text-secondary">
+            <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>ISAE 3000 / AA1000AS non-financial assurance attestation</li>
+            <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i>Full Scope 1, Scope 2, and material Scope 3 value chain audit</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Anti-greenwashing data verification signed by Lead Verifiers</li>
+          </ul>`;
+      }
+    }
+
+    function applyDiagToContact() {
+      const serviceSelect = document.getElementById('serviceSelect');
+      const notes = document.getElementById('facilityNotes');
+      const diagTitle = document.getElementById('diagTitle').innerText;
+      
+      serviceSelect.value = "Validation, Verification & Assurance (VVA)";
+      notes.value = "Recommended by Diagnostic Tool: " + diagTitle;
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    let tco2Base = 48920;
+    setInterval(() => {
+      tco2Base += 1;
+      const el = document.getElementById('tickerTco2');
+      if (el) {
+        el.innerHTML = `${tco2Base.toLocaleString()} <span class="fs-6 text-success fw-normal">tCO₂e</span>`;
+      }
+    }, 4500);
+
+    function handleFormSubmission(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('contactName').value.trim();
+      const company = document.getElementById('contactCompany').value.trim();
+      const email = document.getElementById('contactEmail').value.trim() || 'Not specified';
+      const location = document.getElementById('contactLocation').value.trim();
+      const service = document.getElementById('serviceSelect').value;
+      const notes = document.getElementById('facilityNotes').value.trim() || 'None provided';
+
+      const alertBox = document.getElementById('formSuccessAlert');
+      alertBox.classList.remove('d-none');
+      alertBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      const textMessage = 
+`🌱 *NEW AUDIT CONSULTATION REQUEST - AKR ECOTECH*
+---------------------------------------
+👤 *Contact Person:* ${name}
+🏢 *Company / Enterprise:* ${company}
+📍 *Location:* ${location}
+📧 *Email:* ${email}
+📋 *Requested Service:* ${service}
+📝 *Facility Notes / Scope:* ${notes}
+---------------------------------------
+_Sent via AKR EcoTech Official Web Portal_`;
+
+      const target = getAuditDeskRoute();
+      const whatsappUrl = `https://wa.me/${target}?text=${encodeURIComponent(textMessage)}`;
+
+      setTimeout(() => {
+        window.open(whatsappUrl, '_blank');
+        document.getElementById('auditForm').reset();
+        alertBox.classList.add('d-none');
+      }, 900);
+    }
+  </script>
+</body>
+</html>
